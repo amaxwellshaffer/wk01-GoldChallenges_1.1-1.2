@@ -8,5 +8,16 @@
 
 //NOTE: Write your code below and push back to your github branch.  SUBMIT YOUR GITHUB URL IN CANVAS
 
+let favoriteMovie = {
+    nameOfMovie:    'The Fifth Element',
+    runTime:        '2h 6min',
+    characters:     [{name: 'Korben Dallas', age: 42, items: {matches: 1, car: 'flying taxicab'}},
+                     {name: 'Leeloo', age: 5000, items: {identification: 'MultiPass', karate: true}}],
+    genre:          'Sci-fi',
+}
 
-// time may change me, but you can't trace time
+console.log(favoriteMovie.nameOfMovie);
+console.log(favoriteMovie.runTime);
+console.log(favoriteMovie.characters);
+console.log(favoriteMovie.characters[1].name);
+console.log(favoriteMovie.characters[1].items.identification);
