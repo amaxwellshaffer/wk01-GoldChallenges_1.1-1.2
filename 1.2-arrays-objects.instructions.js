@@ -11,8 +11,8 @@
 let favoriteMovie = {
     nameOfMovie:    'The Fifth Element',
     runTime:        '2h 6min',
-    characters:     [{name: 'Korben Dallas', age: 42, items: {matches: 1, car: 'flying taxicab'}},
-                     {name: 'Leeloo', age: 5000, items: {identification: 'MultiPass', karate: true}}],
+    characters:     [{name: 'Korben Dallas', age: 42, items: [{matches: 1}, {car:'flying taxicab'}]},
+                     {name: 'Leeloo', age: 5000, items: [{identification: 'MultiPass'}, {karate: true}]}],
     genre:          'Sci-fi',
 }
 
@@ -20,4 +20,4 @@ console.log(favoriteMovie.nameOfMovie);
 console.log(favoriteMovie.runTime);
 console.log(favoriteMovie.characters);
 console.log(favoriteMovie.characters[1].name);
-console.log(favoriteMovie.characters[1].items.identification);
+console.log(favoriteMovie.characters[1].items[0].identification);
